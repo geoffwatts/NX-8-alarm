@@ -41,7 +41,7 @@
 
 uint8_t command[20]; //assuming no command will be longer
 uint8_t ack210[]={0x08, 0x44, 0x00};
-uint8_t asleep[]={0x08, 0xd1, MY_ID, 0x01, 0x01}; //this is button 0
+uint8_t asleep[]={0x08, 0xd1, MY_ID, 0x04, 0x01}; //this is button 0
 uint8_t   away[]={0x08, 0xd1, MY_ID, 0x00, 0x01}; //this is button 2
 uint8_t    off[]={0x08, 0xd0, MY_ID, 0x00, 0x01, 0, 0, 0x00}; //still must set off[5] and off[6] to pin bytes
 uint8_t   prog[]={0x08, 0xd0, MY_ID, 0x01, 0x01, 0, 0, 0x00}; //still must set prog[5] and prog[6] to pin bytes
